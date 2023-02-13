@@ -21,4 +21,4 @@ jobs:
     - name: add source
       run: nuget sources add -name github -username s-anupam -password ${{ secrets.github_token }} -StorePasswordInClearText -source "https://nuget.pkg.github.com/s-anupam-nuget-billing/index.json"
     - name: install package
-      run: for i in {1..10}; do rm -rf * && nuget locals all -clear && nuget install LargePub -Version 1.0.0 -Source "https://nuget.pkg.github.com/s-anupam-nuget-billing/index.json"; done
+      run: for i in {1..10}; do rm -rf * && nuget locals all -clear && nuget install LargePvt -Version 7.0.0 -Source "https://nuget.pkg.github.com/s-anupam-nuget-billing/index.json"; done
